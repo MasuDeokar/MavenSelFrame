@@ -19,6 +19,7 @@ public class SubmitOrderTest extends BaseTest {
 	public void SubmitOrder() throws InterruptedException, IOException {
 
 		String productName = "ZARA COAT 3";
+		
 		ProductCatalog productCatalog = landingPage.loginApplication("mayureshdeokar@gmail.com", "Shamanth@123");
 		
 		@SuppressWarnings("unused")

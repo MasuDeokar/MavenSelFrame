@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTest">
+      <class name="masudeokarwork.SeleniumFrameworkDesign.ErrorValidation">
         <methods>
           <include name="launchApplication"/>
           <include name="SubmitOrder"/>
         </methods>
-      </class> <!-- masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTest -->
+      </class> <!-- masudeokarwork.SeleniumFrameworkDesign.ErrorValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObject.masudeokarwork.SeleniumFrameworkDesign.CartPage;
+import pageObject.masudeokarwork.SeleniumFrameworkDesign.OrderPage;
 
 public class AbstractComponents {
 
@@ -22,6 +23,9 @@ public class AbstractComponents {
 
 	@FindBy(css = "[routerlink*='cart']")
 	WebElement cartHeader;
+	
+	@FindBy(css="[routerlink*='myorders']")
+	WebElement orderHeader;
 
 	public void waitForElementToApear(By findBy) {
 
@@ -29,11 +33,22 @@ public class AbstractComponents {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
 
 	}
+	public void waitForWebElementToApear(WebElement findBy) {
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.visibilityOf(findBy));
+	}
 
 	public CartPage goToCartPage() {
 		cartHeader.click();
 		CartPage cartPage = new CartPage(driver);
 		return cartPage;
+	}
+	
+	public OrderPage goToOrderPage() {
+		orderHeader.click();
+		OrderPage orderPage = new OrderPage(driver);
+		return orderPage;
 	}
 
 	public void waitForElementToDisppear(WebElement ele) {

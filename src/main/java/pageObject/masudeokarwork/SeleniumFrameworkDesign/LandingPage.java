@@ -23,10 +23,18 @@ public class LandingPage extends AbstractComponents {
 
 	@FindBy(id = "login")
 	WebElement submit;
-
+	
+	
+	@FindBy(css="[class*='flyInOut']")
+	WebElement errorMessage;
+	
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client/");
 	}
+	 public String getErrorMessage () {
+		 waitForWebElementToApear (errorMessage);
+		 return errorMessage.getText();
+	 }
  
 	public ProductCatalog loginApplication(String email, String password) {
 

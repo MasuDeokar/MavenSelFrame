@@ -25,6 +25,7 @@ public class ConfiramationPage extends AbstractComponents {
 
 	public String getConfirmationMessage() {
 		System.out.println(finalMessage.getText());
+		waitForWebElementToApear(finalMessage);
 		return confirmationMessage.getText();
 
 	}

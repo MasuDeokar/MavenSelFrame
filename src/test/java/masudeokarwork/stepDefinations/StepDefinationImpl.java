@@ -6,7 +6,6 @@ import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -36,6 +35,7 @@ public class StepDefinationImpl extends BaseTest {
 	@When("^I add product (.+) from cart$")
 	public void i_add_product_from_cart(String productName)
 	{
+		@SuppressWarnings("unused")
 		List<WebElement> products = productCatalog.getProductList();
 		productCatalog.addProductToCart(productName);		
 	}
@@ -60,5 +60,14 @@ public class StepDefinationImpl extends BaseTest {
 		String confirmMessage = confiramationPage.getConfirmationMessage();
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase(string));
 		driver.quit();
+	}
+	
+	@Then("^\"([^\"]*) message is displayed")
+	public void message_is_displayed(String string1) throws Throwable
+	{
+		Assert.assertEquals(string1, landingPage.getErrorMessage());
+		
+		driver.close();
+		
 	}
 }

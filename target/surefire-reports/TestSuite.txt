@@ -1,4 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.13 s -- in TestSuite
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 1, Time elapsed: 63.357 s <<< FAILURE! - in TestSuite
+runScenario(cucumber.TestNGTestRunner)  Time elapsed: 0.049 s  <<< FAILURE!
+java.util.regex.PatternSyntaxException: 
+Unclosed group near index 31
+^"([^"]*" message is displayed$
+
+runScenario(cucumber.TestNGTestRunner)  Time elapsed: 0.002 s  <<< FAILURE!
+java.util.regex.PatternSyntaxException: 
+Unclosed group near index 31
+^"([^"]*" message is displayed$
+
+LoginErrorValidation(masudeokarwork.SeleniumFrameworkDesign.ErrorValidationTest)  Time elapsed: 0.436 s  <<< FAILURE!
+java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email  password.]
+	at masudeokarwork.SeleniumFrameworkDesign.ErrorValidationTest.LoginErrorValidation(ErrorValidationTest.java:22)
+

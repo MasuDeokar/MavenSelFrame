@@ -8,12 +8,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import masudeokar.TestComponents.BaseTest;
+import masudeokar.TestComponents.Retry;
 import pageObject.masudeokarwork.SeleniumFrameworkDesign.CartPage;
 import pageObject.masudeokarwork.SeleniumFrameworkDesign.ProductCatalog;
 
 public class ErrorValidationTest extends BaseTest {
 
-	@Test(groups = {"ErrorHandling"})
+	@Test(groups = {"ErrorHandling"},retryAnalyzer=Retry.class)
 	public void LoginErrorValidation() throws InterruptedException, IOException {
 
 		
@@ -37,11 +38,3 @@ public class ErrorValidationTest extends BaseTest {
 
 }
 
-//JavascriptExecutor js = (JavascriptExecutor) driver;
-//js.executeScript("window.scrollBy(0,600)");
-//Thread.sleep(2000);
-//CheckOutPage checkOutPage = cartPage.goToCheckout();
-//checkOutPage.selectCountry("india");
-//ConfiramationPage confiramationPage = checkOutPage.submitOrder();
-//String confirmMessage = confiramationPage.getConfirmationMessage();
-//AssertJUnit.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));

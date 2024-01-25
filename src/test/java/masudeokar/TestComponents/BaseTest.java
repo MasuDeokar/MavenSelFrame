@@ -43,12 +43,12 @@ public class BaseTest {
 							
 			System.setProperty("webdriver.chrome.driver","./ServerOne/chromedriver.exe");
 			driver = new ChromeDriver();
-			ChromeOptions options = new ChromeOptions();
-			if(browserName.contains("headless"))
-			{
-			options.addArguments("headless");
-			}
-			driver = new ChromeDriver(options);
+//			ChromeOptions options = new ChromeOptions(); // This code is for headless browser used in jenkins
+//			if(browserName.contains("headless"))
+//			{
+//			options.addArguments("headless");
+//			}
+//			driver = new ChromeDriver(options);
 			driver.manage().window().setSize(new Dimension(1440,900)); // full screen
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {

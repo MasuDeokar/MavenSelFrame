@@ -8,13 +8,13 @@
       </run>
     </groups>
     <classes>
-      <class name="masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo">
+      <class name="masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestThree">
         <methods>
-          <include name="SubmitOrder" invocation-numbers="0"/>
+          <include name="SubmitOrder" invocation-numbers="1"/>
           <include name="launchApplication"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo -->
+      </class> <!-- masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestThree -->
     </classes>
   </test> <!-- Submit Order Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -62,12 +63,10 @@ public class StepDefinationImpl extends BaseTest {
 		driver.quit();
 	}
 	
-	@Then("^\"([^\"]*) message is displayed")
-	public void message_is_displayed(String string1) throws Throwable
-	{
-		Assert.assertEquals(string1, landingPage.getErrorMessage());
-		
-		driver.close();
-		
+	@Then("^\"([^\"]*)\" message is displayed$")
+	public void messageIsDisplayed(String arg1) throws Throwable {
+		Assert.assertEquals(arg1, landingPage.getErrorMessage());
+		System.out.println(landingPage.getErrorMessage());
+		driver.quit();
 	}
 }

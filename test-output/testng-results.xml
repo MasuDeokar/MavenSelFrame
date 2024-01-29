@@ -2,55 +2,62 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-28T17:32:34 IST" name="Suite" finished-at="2024-01-28T17:33:13 IST" duration-ms="38972">
+  <suite started-at="2024-01-28T21:23:36 IST" name="Default suite" finished-at="2024-01-28T21:24:08 IST" duration-ms="32186">
     <groups>
-      <group name="Purchase">
-        <method signature="SubmitOrderTestTwo.SubmitOrder(java.util.HashMap)[pri:0, instance:masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo@2f4205be]" name="SubmitOrder" class="masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo"/>
-      </group> <!-- Purchase -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@2371aaca]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-01-28T17:32:34 IST" name="Error validation Test" finished-at="2024-01-28T17:32:34 IST" duration-ms="13">
-    </test> <!-- Error validation Test -->
-    <test started-at="2024-01-28T17:32:34 IST" name="Submit Order Test" finished-at="2024-01-28T17:33:13 IST" duration-ms="38972">
-      <class name="masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo@2f4205be]" started-at="2024-01-28T17:32:34 IST" name="launchApplication" finished-at="2024-01-28T17:32:36 IST" duration-ms="2065" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo@2f4205be]" started-at="2024-01-28T17:32:36 IST" name="SubmitOrder" data-provider="getData" finished-at="2024-01-28T17:32:54 IST" duration-ms="17601" status="PASS">
+    <test started-at="2024-01-28T21:23:36 IST" name="Default test" finished-at="2024-01-28T21:24:08 IST" duration-ms="32186">
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@2371aaca]" started-at="2024-01-28T21:23:36 IST" name="setUpClass" finished-at="2024-01-28T21:23:37 IST" duration-ms="1058" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Shamanth@123, product=ZARA COAT 3, email=mayureshdeokar@gmail.com}]]>
+                <![CDATA[org.testng.TestRunner@889a8a8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SubmitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo@2f4205be]" started-at="2024-01-28T17:32:54 IST" name="tearDown" finished-at="2024-01-28T17:32:54 IST" duration-ms="237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo@2f4205be]" started-at="2024-01-28T17:32:54 IST" name="launchApplication" finished-at="2024-01-28T17:32:57 IST" duration-ms="2469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo@2f4205be]" started-at="2024-01-28T17:32:57 IST" name="SubmitOrder" data-provider="getData" finished-at="2024-01-28T17:33:13 IST" duration-ms="16315" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@2371aaca]" started-at="2024-01-28T21:23:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-28T21:23:43 IST" duration-ms="5999" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Shamanth@123, product=ADIDAS ORIGINAL, email=vaishalideokar@gmail.com}]]>
+                <![CDATA["Negative Test Of The Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Error validation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SubmitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo@2f4205be]" started-at="2024-01-28T17:33:13 IST" name="tearDown" finished-at="2024-01-28T17:33:13 IST" duration-ms="210" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@2371aaca]" started-at="2024-01-28T21:23:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-28T21:24:08 IST" duration-ms="24932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Test Of Submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase The Order From E-Commerce Website"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTestTwo -->
-    </test> <!-- Submit Order Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@2371aaca]" started-at="2024-01-28T21:24:08 IST" name="tearDownClass" finished-at="2024-01-28T21:24:08 IST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

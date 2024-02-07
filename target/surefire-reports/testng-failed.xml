@@ -10,9 +10,21 @@
         <methods>
           <include name="launchApplication"/>
           <include name="tearDown"/>
-          <include name="LoginErrorValidation"/>
+          <include name="productErrorValidation"/>
         </methods>
       </class> <!-- masudeokarwork.SeleniumFrameworkDesign.ErrorValidationTest -->
     </classes>
   </test> <!-- Error validation Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)" verbose="0">
+    <classes>
+      <class name="masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTest">
+        <methods>
+          <include name="SubmitOrder" invocation-numbers="0 1"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="orderHistoryTest"/>
+        </methods>
+      </class> <!-- masudeokarwork.SeleniumFrameworkDesign.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
